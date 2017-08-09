@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Component: Grid
+ ============================================================================ */
+.am-container {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
+.am-container:before,
+.am-container:after {
+    content: " ";
+    display: table;
+}
+.am-container:after {
+    clear: both;
+}
+@media only screen and (min-width:641px) {
+    .am-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.am-container > .am-g {
+    width: auto;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+@media only screen and (min-width:641px) {
+    .am-container > .am-g {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+}
